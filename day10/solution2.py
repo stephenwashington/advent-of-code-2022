@@ -9,8 +9,8 @@ class Instruction:
 def draw_pixel(screen, cycle_count, sprite_middle_location):
     row_idx = cycle_count // 40
     col_idx = cycle_count % 40
-    if row_idx == 6: # since 240 // 6 == 6 but we want it to be on row 5
-        row_idx == 5
+    if row_idx == 6: # since 240 // 6 = 6 but we want it to be on row 5
+        row_idx = 5
     print(cycle_count, row_idx, col_idx, sprite_middle_location)
     if col_idx == sprite_middle_location or \
        col_idx+1 == sprite_middle_location or \
